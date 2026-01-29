@@ -12,4 +12,4 @@ Official implementation of
 
 We are currently cleaning and organizing the codebase.
 The full implementation, training scripts, and evaluation pipeline
-will be released before the conference.
+will be released.
