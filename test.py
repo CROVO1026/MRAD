@@ -299,7 +299,7 @@ if __name__ == '__main__':
     parser.add_argument("--k", type=float, default=0.7, help="fusion weight (0.5, 0.7, 0.8)")
     parser.add_argument("--device",type=str,default='cuda:1')
     parser.add_argument("--visulize_bool",type=bool,default=False)
-    parser.add_argument("--compute_pixel_aupro", type=bool, default=False, help="compute pixel-level AUPRO metric in addition to AUROC")
+    parser.add_argument("--compute_pixel_aupro", type=bool, default=True, help="compute pixel-level AUPRO metric in addition to AUROC")
     parser.add_argument("--model_type", type=str, default='mrad-clip',
         choices=['mrad-clip', 'mrad-ft', 'mrad-tf'],
         help='Model type: mrad-clip (full), mrad-ft (fine-tuned), mrad-tf (train-free)')
