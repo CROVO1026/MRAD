@@ -65,11 +65,11 @@ def train(args):
 
     # Load memory bank
     cache_keys, cache_values = build_cache_model(
-        load_cache=True, clip_model=model, train_loader_cache=None,
+        load_cache=True, clip_model=model, train_loader_cache=train_dataloader,
         device=device, dir=os.path.join(args.cache_dir, f'cache_model_{dataset_name}.pt')
     )
     cache_keys_patch, cache_values_patch = build_patch_cache_model(
-        load_cache=True, clip_model=model, train_loader_cache=None,
+        load_cache=True, clip_model=model, train_loader_cache=train_dataloader,
         device=device, dir=os.path.join(args.cache_dir, f'cache_patch_model_{dataset_name}.pt')
     )
     print(f"cache_key: {cache_keys.shape}")
